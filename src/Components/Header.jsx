@@ -30,7 +30,7 @@ const Header = () => {
           {/* Nav */}
           <nav className="flex items-center gap-6">
 
-            <Link to="/home">
+            <Link to="/">
               Home
             </Link>
 
