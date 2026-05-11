@@ -1,5 +1,3 @@
-// ProductDetails.jsx
-
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import api from "../../utils/api";
@@ -13,8 +11,7 @@ const ProductDetails = () => {
   const [selectedColor, setSelectedColor] = useState("");
   const [availableColors, setAvailableColors] = useState(["Black", "White", "Blue", "Red", "Green"]);
 
-  // Fetch Single Product
-  useEffect(() => {
+useEffect(() => {
     const fetchProduct = async () => {
       try {
         const response = await api.get(`/products/${id}`);
