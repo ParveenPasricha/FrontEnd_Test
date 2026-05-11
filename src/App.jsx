@@ -6,11 +6,13 @@ import Home from './Components/Home'
 import Products from './Components/Products'
 import ProductDetails from './Components/ProductDetails'
 import { CartProvider } from './Components/CartContext'
+import ScrollToTop from "../ScrollToTop";
 
 const App = () => {
   return (
     <BrowserRouter>
     <CartProvider>
+      <ScrollToTop/>
     <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
